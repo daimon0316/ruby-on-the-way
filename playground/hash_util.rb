@@ -15,7 +15,8 @@ class HashUtil
 
   # 将 key 和 value 组成新的 hash
   def to_hash(key_array, value_array)
-    # TODO
+    hashList = [key_array,value_array].transpose
+    return p Hash[*hashList.flatten]
   end
 
 end
